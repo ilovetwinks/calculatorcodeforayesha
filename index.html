@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>salamalekum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #e0f7fa);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .fullscreen-message {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      font-size: 3em;
+      color: #d6336c;
+    }
+
+    .content {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-width: 300px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    audio {
+      display: none;
+    }
+
+    /* Floating emojis */
+    .pray {
+      position: fixed;
+      font-size: 1.5em;
+      animation: float 10s linear infinite;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(30px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Opening full-screen message -->
+  <div class="fullscreen-message">
+    <div>im a programmer.<br>scroll down slowly :3</div>
+  </div>
+
+  <!-- Floating 🙏 emojis -->
+  <script>
+    for (let i = 0; i < 25; i++) {
+      const emoji = document.createElement('div');
+      emoji.classList.add('pray');
+      emoji.textContent = '🙏';
+      emoji.style.left = Math.random() * 100 + 'vw';
+      emoji.style.animationDuration = (5 + Math.random() * 10) + 's';
+      document.body.appendChild(emoji);
+    }
+  </script>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1>salamalekum</h1>
+    <p>Hi. 
+I do write stuff but ive never rlly written anything like this like ever. I did practice writing letters and stuff for my english cie like A YEAR AGO so i dont know how this is going to go. Starting from december as u said, i um. 
+I dont know what i did but i think it starts from the post that i made on cies confession which u didn’t like a lot. Um, maybe i was acting weird with you at school too and i shouldnt have done that. I’ll try explaining but it obviously doesnt mean that whatever ive done was right i just want u to know where i was coming from. So um. For over a year i had been studying without like u so like i had totally forgotten how it was like being w u and its not a bad thing but tab js u being everywhere i was lowk suffocated me thora sa so i felt like 
+Um
+Distant maybe 
+And cs o levels mein we wouldnt see each other everyday so it felt different and purposeful studying with you but ab that we saw each other like every single day it wasnt js as fun and i wanted to study with someone who i didnt know that well so like it didnt feel like a chore. This probably does sound hurtful but it is what it is lowk. 
+Thank you tho. For not leaving or like js disappearing
+Im sorry. I really am. 
+Thats all really 
+</p>
+    <img src="rayan1.jpg" alt="Rayan">
+    <audio autoplay loop>
+      <source src="itywtd.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+</body>
+</html>
